@@ -362,7 +362,6 @@ footer p:last-child{
         padding-bottom: 5%;
         padding-left: 2%;
         font-weight: 200;
-        /* background-color: red; */
     }
     footer{
         margin: 1%;
@@ -372,18 +371,170 @@ footer p:last-child{
         width: 100%;
         height: auto;
         flex-direction: column;
+        margin: 0;
+        padding-top: 2%;
     }
     .rodape-conteudo{
         width: 100%;
     }
     .rodape-conteudo h2{
         text-align: center;
+        width: 100%;
+    }
+    .rodape-conteudo div{
         width: 90%;
+        margin: 0 5%;
+    }
+}
+/* Resposividade de 541px até 768px */
+@media (min-width:541px) and (max-width:769px){
+    .limite{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .formulario{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .formulario-conteudo h2{
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 2% 0;
+    }
+    .formulario-conteudo label .formulario-conteudo select{
+        font-size: medium;
+        font-weight: normal;
+    }
+    button{
+        width: 100%;
+        font-weight: 600;
+    }
+    .quarto{
+        width: 35%;
+    }
+    .preferencia{
+        width: 90%;
+    }
+    .ofertas h1{
+        padding: 2% 0;
+    }
+    .galeria-1{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .destaque, .comum, .comum div{
+        width: 100%;
         margin: 2% 0;
+    }
+    .destaque figure, .comum figure{
+        width: 100%;
+        display: flex; 
+    }
+    .destaque figcaption, .comum figcaption{
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        font-size: large;
+    }
+    .destaque img, .comum img{
+        width: 100%;
+    }
+    .natureza h1{
+        font-weight: 500;
+        margin-bottom: 2%;
+    }
+    .natureza p:nth-child(2){
+        margin: 2% 0;
+    }
+    .natureza p:first-child{
+        font-size: large;
+        font-weight: 600;
+        margin: 0 2%;
+    }
+   .galeria-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+   }
+   .galeria-2 div{
+    width: 100%;
+    margin: 2% 0;
+   }
+   .galeria-2 figcaption p:nth-child(2){
+    margin: 0 2%;
+   }
+   footer{
+    width: 100%;
+   }
+   .rodape{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 2%;
+}
+.rodape-conteudo{
+    width: 100%;
+}
+.rodape-conteudo h2{
+    text-align: center;
+    width: 100%;
+}
+.rodape-conteudo div{
+    width: 90%;
+    margin: 0 5%;
+}
+}
+
+/* Responsividade para telas maiores que 770px */
+@media (min-width:770px){
+    .limite{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .formulario{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .formulario{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .formulario-conteudo h2{
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 2% 0;
+    }
+    .formulario-conteudo label .formulario-conteudo select{
+        font-size: medium;
+        font-weight: normal;
+    }
+    footer{
+        width: 100%;
+       }
+       .rodape{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        margin: 0;
+        padding-top: 2%;
+    }
+    .rodape-conteudo{
+        width: 45%;
+        margin: 0 5%;
+    }
+    .rodape-conteudo h2{
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5%;
     }
     .rodape-conteudo div{
         width: 100%;
+
     }
-
 }
-
