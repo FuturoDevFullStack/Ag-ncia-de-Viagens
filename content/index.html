@@ -19,14 +19,14 @@
     <main>
         <div class="background">
             <!-- div para background -->
-            <section class="formulario limite">
-                <div class="titulo">
+            <section class="formulario limite"> <!--Classe adicionada para conter os elementos filhos-->
+                <div class="titulo"> <!--Classe adicionada para estilização do título do formulário-->
                     <img src="img/aviao.png" alt="aviao"><p>Solicite um orçamento</p>    
                 </div>
-                <div class="formulario-conteudo">
+                <div class="formulario-conteudo"> <!--Classe adicionada para o uso do display flex (usado flex-direction colunm)-->
                     <h2>Informe seus dados</h2>
                     <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
-                        <div class="content">
+                        <div class="content"> <!--Classe adicionada para deixar os elementos com espaçamento ideal-->
                             <label for="nome">Nome</label>
                             <input type="text" name="nome" required placeholder="Nome completo" id="nome">    
                         </div>
@@ -39,18 +39,18 @@
                             <input type="tel" name="celular" required placeholder="(xx) xxxxx-xxxx" id="celular">   
                         </div>
                         
-                        <div class="divisa">
-                            <div class="data">
+                        <div class="divisa"> <!--Classe adicionada para criar uma divisão de largura, como foi solicitado no projeto-->
+                            <div class="data"> <!--Classe adicionada para definição da largura dessa div, que é de 45% (os demais 5% é para espaçamento)-->
                                 <div class="ida">
                                     <label for="ida">Data da ida</label>
                                     <input type="date" name="partida" id="ida" required>
                                 </div>
-                                <div class="volta">
+                                <div class="volta"> <!--Classe com a mesma função da clasee "data"-->
                                     <label for="volta">Data da Volta</label>
                                     <input type="date" name="chegada" id="volta" required>
                                 </div>
                             </div>
-                            <div class="local">
+                            <div class="local"> <!--Classe adicionada para criação do select-->
                                 <div>
                                     <label for="origem">Origem</label>
                                     <select class="origem" name="origem" id="origem">
@@ -63,7 +63,7 @@
                                 </select>   
                                 </div>
                                 <div>
-                                  <label for="destino">Destino</label>
+                                  <label for="destino">Destino</label> 
                                     <select class="destino-1" name="destino" id="destino">
                                         <option>Indo para</option>
                                         <option value="MA">Maranhão</option>
@@ -76,8 +76,8 @@
                                 
                             </div>
                         </div>
-                        <p id="titulo-quarto">Quarto com cama infantil?</p>
-                        <div class="quarto">
+                        <p id="titulo-quarto">Quarto com cama infantil?</p> 
+                        <div class="quarto"> <!--Classe adicionada para o input e estilização-->
                             <div>
                                 <input type="radio" name="infantil" value="s" id="infantil-sim">
                                 <label for="infantil-sim">Sim</label>   
@@ -87,7 +87,7 @@
                                 <label for="infantil-nao">Não</label>   
                             </div>
                         </div>
-                        <p>Preferências de hospedagem</p>
+                        <p>Preferências de hospedagem</p> <!--Classe com as preferências do usuário-->
                         <div class="preferencia">
                             <div>
                                 <input type="checkbox" name="preferencias[]" id="piscina" value="piscina">
@@ -112,17 +112,20 @@
 
             </section>
         </div>
-        <section class="ofertas limite">
+        <section class="ofertas limite"> 
+            <!--Classe adicionada para inserção das imagens e conteúdo princiapal. 
+            Dentro dela há subclasses para que a galeria seja exibida no formato solicitado 
+            (uma imagem ocupando 50% da div pai e as outras 4 dividindo os demais 50%)-->
             <h1>Ofertas</h1>
-            <h2>Com até <b>50%</b> de desconto!</h2>
-            <div class="galeria-1">
-                <div class="destaque">
+            <p>Com até <b>50%</b> de desconto!</p>
+            <div class="galeria-1"> <!--Classe adicionada para organizar as imagens no layout desejado-->
+                <div class="destaque"> <!--Classe com 50% de width, sendo ela o destaque da galeria-->
                     <figure>
                         <img src="img/rio.jpg" alt="Cristo redentor" title="Cristo Redentor">
                         <figcaption>Rio de Janeiro</figcaption>
                     </figure>
                 </div>
-                <div class="comum">
+                <div class="comum"> <!--Classe com as demais imegens do layout-->
                     <div>
                         <figure>
                             <img src="img/manaus.jpg" alt="manaus" title="Manaus">
@@ -150,15 +153,14 @@
                 </div>
             </div>
         </section>
-        <section class="natureza limite">
+        <section class="natureza limite"> <!--Classe adicionada para inserção das imagens-->
             <h1>Explore a Natureza</h1>
             <p>Viaje conosco e veja o melhor que a a natureza tem a oferecer.</p>
-            <div class="galeria-2">
+            <div class="galeria-2"> <!--Classe adicionada para organizar as imagens e controlar a responsividade das imagens-->
                 <div>
                     <figure>
                         <img src="img/lencol.jpg" alt="Lençóis Maranheses" title="Lençóis Maranheses">
-                        <figcaption><b>Lençóis Maranheses, Maranhão, Brasil</b>
-                            <br>
+                        <figcaption><p>Lençóis Maranheses, Maranhão, Brasil</p>
                             <p>Ida e volta a partir de R$79</p>
                         </figcaption>
                         
@@ -167,8 +169,7 @@
                 <div>
                     <figure>
                         <img src="img/goias.jpg" alt="Santa Bárbara" title="Santa Bárbara">
-                        <figcaption><b>Cahoeirra Santa Bárbara, Goiás, Brasil</b>
-                            <br>
+                        <figcaption><p>Cahoeirra Santa Bárbara, Goiás, Brasil</p>
                             <p>Ida e volta a partir de R$79</p>
                         </figcaption>
                     </figure>
@@ -177,34 +178,34 @@
         </section>
     </main>
     <footer>
-        <section class="rodape limite">
-            <div class="rodape-conteudo">
+        <section class="rodape limite"> <!-- Classe adicionada para ajudar na responsividade-->
+            <div class="rodape-conteudo"> <!-- Classe adicionda como filha de rodape para conter as demais divs-->
                 <h2>Contato</h2>
                 <div>
-                    <img src="img/local.png" alt="Logo">
+                    <a href="https://goo.gl/maps/52LBqnRzeRzFx6W7A" target="_blank"><img src="img/local.png" alt="Logo"></a>
                     <P>Rio de Janeiro, RJ</P>   
                 </div>
                 <div>
-                    <img src="img/telefone.png" alt="Telefone">
+                    <a href="tel:+(21)99999-9999" target="_blank"><img src="img/telefone.png" alt="Telefone"></a>
                     <p>Telefone (21) 99999-9999</p>
                 </div>
                 <div>
-                    <img src="img/email.png" alt="email">
+                    <a href="mailto:contato@gmail.com" target="_blank"><img src="img/email.png" alt="email"></a>
                     <p>Email: contato@gmail.com</p>
                 </div>
             </div>
             <div class="rodape-conteudo">
                 <h2>Conheça nossas redes sociais</h2>
                 <div>
-                    <img src="img/fb.png" alt="Facebook">
+                    <a href="https://www.facebook.com/search/top?q=ag%C3%AAnciadeviagem" target="_blank"><img src="img/fb.png" alt="Facebook"></a>
                     <p>/AgenciaDeViagem</p>
                 </div>
                 <div>
-                    <img src="img/ig.png" alt="Instagram">
+                    <a href="https://www.instagram.com/explore/tags/agenciadeviagem/" target="_blank"><img src="img/ig.png" alt="Instagram"></a>
                     <p>@AgenciaDeViagem</p>
                 </div>
                 <div>
-                <img src="img/tt.png" alt="tt">
+                <a href="http://https://twitter.com/search?q=Ag%C3%AAnciDeViagem&src=typeahead_click" target="_blank"><img src="img/tt.png" alt="tt"></a>
                 <p>@AgenciaDeViagem</p>
                 </div>
             </div>
